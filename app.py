@@ -9,7 +9,7 @@ import shutil
 
 HAS_WMI = False
 try:
-    if platform.system() == 'Windows':
+    if platform.system() == 'Windows': #This is Windows only
         import wmi
         import pythoncom
         HAS_WMI = True
