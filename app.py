@@ -152,7 +152,7 @@ def get_linux_nvidia_gpu_stats():
             pass
     return gpu_list
 
-def get_linux_amd_gpu_stats():
+def get_linux_amd_gpu_stats(): #This is Linux only
     """Retrieves AMD GPU stats using rocm-smi on Linux."""
     gpu_list = []
     if not HAS_ROCMSMI:
