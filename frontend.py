@@ -32,7 +32,7 @@ class ServerManager:
     def start_server(self):
         if self.server_process is None:
             self.server_process = subprocess.Popen(
-                [sys.executable, 'app.py'],
+                [sys.executable, 'app.py'],# Ensure 'app.py' is in the same directory
                 creationflags=subprocess.CREATE_NO_WINDOW if sys.platform == 'win32' else 0,
                 cwd=os.path.dirname(os.path.abspath(__file__))
             )
